@@ -1658,16 +1658,21 @@ input, select, textarea {
 
 			#main .thumb > h2 {
 				pointer-events: none;
-				bottom: 1.875em;
-				font-size: 0.8em;
-				left: 2.1875em;
-				margin: 0;
-				position: absolute;
-				z-index: 1;
+			    bottom: 3.875em;
+			    font-size: 0.8em;
+			    left: 2.1875em;
+			    margin: 0;
+			    position: absolute;
+			    z-index: 1;
 			}
 
 			#main .thumb > p {
-				display: none;
+				left: 2.1875em;
+			    margin: 0;
+			    position: absolute;
+			    z-index: 1;
+			    bottom: 1.875em;
+			    font-size: 0.8em;
 			}
 
 		#main:after {
