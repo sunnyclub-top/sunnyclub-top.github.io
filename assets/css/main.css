@@ -16,6 +16,11 @@ a.image {
 	color: #fff;
 }
 
+.free {
+	height: 30px;
+    margin-left: 10px;
+}
+
 .about-logo {
 	rotate: 10deg;
 	float: right;
