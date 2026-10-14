@@ -1678,6 +1678,8 @@ input, select, textarea {
 			    margin: 0;
 			    position: absolute;
 			    z-index: 1;
+				white-space: nowrap; /* Classic standard approach */
+  				text-wrap: nowrap;   /* Modern CSS approach */
 			}
 
 			#main .thumb > p {
@@ -1687,6 +1689,8 @@ input, select, textarea {
 			    z-index: 1;
 			    bottom: 1.875em;
 			    font-size: 0.8em;
+				white-space: nowrap; /* Classic standard approach */
+  				text-wrap: nowrap;   /* Modern CSS approach */
 			}
 
 		#main:after {
