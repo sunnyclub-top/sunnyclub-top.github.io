@@ -32,7 +32,7 @@
 				<!-- Main -->
 					<div id="main">
 						<article class="thumb">
-							<a href="books/01.epub" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<a href="books/01.epub" class="image show-badge"><img src="images/thumbs/01.jpg" alt="" /></a>
 							<h2><img class="free" src="images/free.png" alt="" /> <strong>Letters &amp; Papers From Prison</strong> Deitrich Bonhoeffer</h2>
 							<p>Letter's written by someone who tried to kill Hitler!</p>
 						</article>
@@ -184,6 +184,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				const containers = document.querySelectorAll('.image');
+				
+				containers.forEach(container => {
+				  // Check if the target class is present
+				  if (container.classList.contains('show-badge')) {
+				    const overlay = document.createElement('img');
+				    overlay.src = 'images/this-month.png';
+				    overlay.classList.add('dynamic-overlay');
+				    container.appendChild(overlay);
+				  }
+				});
+			</script>
 
 	</body>
 </html>
