@@ -12,6 +12,20 @@ a.image {
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.dynamic-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
 #main .thumb > p {
 	color: #fff;
 }
