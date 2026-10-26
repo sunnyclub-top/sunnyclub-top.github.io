@@ -191,7 +191,10 @@
 				const currentYear= new Date().getFullYear() - 2027;
 				const currentSelector = currentYear == -1 ? 0 : currentMonth + (currentYear * 12);
 				const selectionArray = [2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
-				const showBadgeForBook = selectionArray[currentSelector]
+				const showBadgeForBook = selectionArray[currentSelector];
+
+				console.log(currentSelector);
+				console.log(showBadgeForBook);
 				
 				// Select the div you want to target (using a data attribute or ID)
 				const targetAnchor = document.querySelector(`div[data-selection="${showBadgeForBook}"]`);
